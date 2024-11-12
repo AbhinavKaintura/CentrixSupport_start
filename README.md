@@ -45,16 +45,15 @@ The chatbot is built to fulfill the following objectives:
    https://github.com/AbhinavKaintura/CentrixSupport.git
    cd centrixsupport
 2.  **Backend Setup**:
-   ```bash
       cd src
-```
-3.     ```bash
+
+3.     
         python app.py
-        ```
-4.  ```bash
+        
+4.  
         npm install
 
-        ```
-  5.  ```bash
+        
+5.  
         npm start
-        ```
+       
