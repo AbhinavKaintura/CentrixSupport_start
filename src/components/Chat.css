@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: #E6EFE9;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* .container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  } */
+  
+  .container {
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .chat-section {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .resources-section {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+  }
+  
+  .header {
+    background: #4A6741;
+    color: white;
+    padding: 20px;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .chat-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #F8FAF9;
+  }
+  
+  .message {
+    max-width: 80%;
+    padding: 12px 16px;
+    border-radius: 15px;
+    margin: 5px 0;
+    font-size: 1.1em;
+  }
+  
+  .user-message {
+    background: #E8F0E3;
+    align-self: flex-end;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .bot-message {
+    background: #FFFFFF;
+    align-self: flex-start;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .input-container {
+    padding: 25px;
+    background: #FFFFFF;
+    display: flex;
+    gap: 15px;
+    border-top: 1px solid #E0E0E0;
+    position: relative;
+  }
+  
+  input {
+    flex: 1;
+    padding: 15px 25px;
+    border: 2px solid #D0D5DD;
+    border-radius: 30px;
+    outline: none;
+    font-size: 1.1em;
+    transition: border-color 0.3s ease;
+  }
+
+  .logo-icon {
+    position: absolute;
+    left: 10px;
+    background-color: #ffffff;
+    background: transparent;
+    border: none;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  .logo-button img {
+    background-color: #ffffff;
+    width: 24px;
+    height: 24px;
+  }
+
+
+  .logo-button:hover {
+    background-color:#E8F0E3;
+  }
+  .greenbtn {
+    background: #4A6741;
+
+  }
+  
+  input:focus {
+    border-color: #4A6741;
+  }
+  
+  button {
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1.1em;
+  }
+  
+  .greenbtn:hover {
+    background: #5B7D50;
+  }
+  
+  .resource-card {
+    background: #FFFFFF;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .resource-card h2 {
+    color: #4A6741;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+  }
+  
+  .resource-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .resource-link {
+    color: #4A6741;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    font-size: 1.1em;
+  }
+  
+  .resource-link:hover {
+    background: #E8F0E3;
+  }
+  
+  .disclaimer {
+    color: #666;
+    font-size: 1em;
+    text-align: center;
+    padding: 15px;
+    line-height: 1.5;
+  }
+  
+  .footer {
+    background: #4A6741;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    margin-top: auto;
+    width: 100%;
+  }
+  
+  .content-text {
+    text-align: center;
+    padding: 10px;
+    color: #4A6741;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+  
+    .resources-section {
+        display: none;
+    }
+  
+    .chat-section {
+        height: 100%;
+    }
+  }
