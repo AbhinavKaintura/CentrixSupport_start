@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# CentrixSupport - Mental Health Support Chatbot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CentrixSupport is an AI-powered chatbot designed to provide mental health support and resources to individuals experiencing stress or anxiety. The chatbot offers empathetic responses, coping mechanisms, and links to professional help, assisting users who may need further guidance.
 
-## Available Scripts
+## Problem Statement
 
-In the project directory, you can run:
+The chatbot is built to fulfill the following objectives:
+- **Provide empathetic responses** to help users feel understood and supported.
+- **Guide users with coping mechanisms** to manage stress and anxiety.
+- **Link users to professional help** for additional assistance, ensuring timely and accurate support.
 
-### `npm start`
+## Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: Developed in React to provide a responsive and interactive interface.
+- **Backend**: Built with Flask to handle user requests, process inputs, and return AI-based responses.
+- **Model**: Utilizes the Gqor Large Language Model (LLM) to process and generate contextually relevant answers to user queries.
+  
+## Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Empathetic Responses**: The chatbot delivers responses that are supportive and compassionate.
+- **Coping Mechanisms**: Offers specific techniques and practices to manage stress and anxiety.
+- **Professional Resources**: Provides links and suggestions for professional mental health support.
 
-### `npm test`
+## File Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **src/** - Contains the React frontend files.
+- **app.py** - Flask backend for managing requests between the frontend and Gqor LLM model.
+- **models/** - Directory for machine learning model files.
+- **static/** - Static files like CSS, JavaScript, and images.
+- **templates/** - HTML templates used by Flask.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js
+- Python 3
+- Flask and other required Python libraries (install via `requirements.txt`)
+- React dependencies (install via `package.json`)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/centrixsupport.git
+   cd centrixsupport
+2.  **Backend Setup**:
+   ```bash
+      cd src
+```
+3.     ```bash
+        python app.py
+        ```
+4.  ```bash
+        npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+        ```
+  5.  ```bash
+        npm start
+        ```
