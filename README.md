@@ -21,7 +21,7 @@ The chatbot is built to fulfill the following objectives:
 - **Coping Mechanisms**: Offers specific techniques and practices to manage stress and anxiety.
 - **Professional Resources**: Provides links and suggestions for professional mental health support.
 
-## Architecture
+## Working Flow of the Project
 
 ![Architecture](img/architecture.jpg)
 
