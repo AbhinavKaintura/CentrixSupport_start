@@ -21,6 +21,10 @@ The chatbot is built to fulfill the following objectives:
 - **Coping Mechanisms**: Offers specific techniques and practices to manage stress and anxiety.
 - **Professional Resources**: Provides links and suggestions for professional mental health support.
 
+## Architecture
+
+![Architecture](img/architecture.jpg)
+
 ## File Structure
 
 - **src/** - Contains the React frontend files.
@@ -44,16 +48,3 @@ The chatbot is built to fulfill the following objectives:
    ```bash
    https://github.com/AbhinavKaintura/CentrixSupport.git
    cd centrixsupport
-2.  **Backend Setup**:
-      cd src
-
-3.     
-        python app.py
-        
-4.  
-        npm install
-
-        
-5.  
-        npm start
-       
